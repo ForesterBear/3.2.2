@@ -1,0 +1,37 @@
+{
+    "question1": {
+        "text": "Яка команда дозволяє ініціалізувати новий Node.js проєкт?",
+        "a": "node start",
+        "b": "npm init",
+        "c": "pip install",
+        "correct": "b"
+    },
+    "question2": {
+        "text": "Для чого використовується require() у Node.js?",
+        "a": "Щоб запустити веб-сервер",
+        "b": "Щоб компілювати код",
+        "c": "Щоб імпортувати модулі",
+        "correct": "c"
+    },
+    "question3": {
+        "text": "Який з типів не є примітивним у JavaScript?",
+        "a": "object",
+        "b": "string",
+        "c": "number",
+        "correct": "a"
+    },
+    "question4": {
+        "text": "Який метод використовується в Node.js для читання файлу?",
+        "a": "fs.readFile()",
+        "b": "fs.append()",
+        "c": "fs.writeFile()",
+        "correct": "a"
+    },
+    "question5": {
+        "text": "Як у MongoDB перемкнутись на іншу базу даних?",
+        "a": "switch назва_БД",
+        "b": "use назва_БД",
+        "c": "ALT+F4",
+        "correct": "b"
+    }
+}

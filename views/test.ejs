@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>Вітаємо, <%= username%></h1>
+    <h2>Тест</h2>
+<form id="testForm" method="POST" action="/result">
+  <input type="hidden" name="username" value="<%= username %>" />
+
+  <% questions.forEach((q, index) => { %>
+    <fieldset>
+      <legend><%= index + 1 %>. <%= q.text %></legend>
+
+      <label>
+        <input type="radio" name="q<%= index %>" value="a" required />
+        <%= q.a %>
+      </label><br>
+      <label>
+        <input type="radio" name="q<%= index %>" value="b" />
+        <%= q.b %>
+      </label><br>
+      <label>
+        <input type="radio" name="q<%= index %>" value="c" />
+        <%= q.c %>
+      </label>
+      
+    </fieldset>
+  <% }) %>
+
+  <button type="submit">Завершити тест</button>
+</form>
+
+</body>
+</html>
